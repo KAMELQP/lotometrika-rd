@@ -17,4 +17,9 @@ st.write("Total sorteos:", len(df))
 frecuencia = df["primero"].value_counts().head(10)
 
 st.write("Top 10 números en primera posición")
-st.bar_chart(frecuencia)
+st.bar_chart(frecuencia)st.subheader("Top 10 números en Primera")
+
+top_primero = df["primero"].value_counts().head(10)
+
+st.bar_chart(top_primero)
+
